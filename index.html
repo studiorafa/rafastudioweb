@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rafa Studio</title>
+    <!-- Fonts: Inter and JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+            colors: {
+              black: '#000000',
+              white: '#FFFFFF',
+              gray: {
+                mid: '#666666',
+                light: '#F5F5F5',
+                dark: '#1A1A1A', // Dark mode surface
+                textDark: '#A3A3A3', // Dark mode secondary text
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <script>
+      // Anti-flash script: Default to dark mode
+      if (localStorage.getItem('theme') === 'light') {
+        document.documentElement.classList.remove('dark');
+      } else {
+        document.documentElement.classList.add('dark');
+      }
+    </script>
+    <style>
+      /* Global Reset overrides */
+      body {
+        background-color: #FFFFFF;
+        color: #000000;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      .dark body {
+        background-color: #000000;
+        color: #FFFFFF;
+      }
+      /* Smooth scrolling logic */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* CUSTOM SCROLLBAR - The "Rail" */
+      ::-webkit-scrollbar {
+        width: 8px; /* Slightly wider than 6px for better usability */
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: transparent; 
+      }
+
+      /* Thumb - Light Mode */
+      ::-webkit-scrollbar-thumb {
+        background: #e5e5e5; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #d4d4d4; 
+      }
+
+      /* Thumb - Dark Mode */
+      .dark ::-webkit-scrollbar-thumb {
+        background: #333333; 
+      }
+      .dark ::-webkit-scrollbar-thumb:hover {
+        background: #4d4d4d; 
+      }
+
+      /* MINIMALIST SELECTION */
+      ::selection {
+        background-color: #000000;
+        color: #FFFFFF;
+      }
+      .dark ::selection {
+        background-color: #FFFFFF;
+        color: #000000;
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/rafastudioweb/assets/index-BZRhfaFh.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
