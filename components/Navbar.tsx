@@ -59,9 +59,10 @@ const Navbar = () => {
         <div className="lg:absolute lg:left-0 lg:top-1/2 lg:-translate-y-1/2 lg:mr-16">
           <button 
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="text-[18px] font-semibold tracking-[-0.02em] text-black dark:text-white transition-colors"
+            className="h-8 transition-opacity hover:opacity-80"
+            aria-label="Rafa Studio Logo"
           >
-            {`->RS`}
+            <img src="/assets/primary.png" alt="Rafa Studio" className="h-full object-contain" />
           </button>
         </div>
 

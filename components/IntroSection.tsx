@@ -19,9 +19,9 @@ const IntroSection = () => {
 
   return (
     <section id="intro" className="pt-[140px] lg:pt-[180px] flex flex-col items-start min-h-[60vh] relative">
-      <h1 className="text-[32px] lg:text-[48px] font-semibold leading-[1.1] tracking-[-0.03em] text-black dark:text-white mb-[24px] transition-colors">
-        {siteConfig.intro.name}
-      </h1>
+      <div className="mb-[24px] h-12 lg:h-16">
+        <img src="/assets/primary.png" alt={siteConfig.intro.name} className="h-full object-contain" />
+      </div>
 
       <p className="text-[16px] lg:text-[18px] font-normal leading-[1.6] tracking-[-0.01em] text-black dark:text-gray-200 max-w-[600px] transition-colors">
         {siteConfig.intro.tagline}
