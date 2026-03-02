@@ -5,15 +5,13 @@ import react from "@vitejs/plugin-react";
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, ".", "");
     return {
-        base: "/rafastudioweb/",
+        base: "./",
         server: {
             port: 3000,
             host: "0.0.0.0",
         },
         plugins: [react()],
-        define: {
-            // API keys should never be exposed to client-side code
-        },
+        define: {},
         resolve: {
             alias: {
                 "@": path.resolve(__dirname, "."),
