@@ -26,7 +26,7 @@ const IntroSection = () => {
         >
             <h1 className="mb-[24px]">
                 <img
-                    src="/assets/icons/primary.png"
+                    src="/rafastudioweb/assets/icons/primary.png"
                     alt={siteConfig.intro.name}
                     className={`h-[32px] lg:h-[48px] w-auto transition-all duration-300 block ${theme === "dark" ? "invert" : ""}`}
                 />

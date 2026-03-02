@@ -102,7 +102,7 @@ const Navbar = () => {
             aria-label="Home"
           >
             <img 
-              src="/assets/icons/favicon.png" 
+              src="/rafastudioweb/assets/icons/favicon.png" 
               alt="RS" 
               className={`h-[28px] w-[28px] transition-all duration-300 ${theme === 'dark' ? 'invert' : ''}`}
             />

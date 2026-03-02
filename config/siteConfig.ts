@@ -20,8 +20,8 @@ export const siteConfig: SiteConfig = {
                         "A cruise ship built to feel alive. Neon reflects off water, light shifts as you move through spaces, and none of it costs you frames. The aesthetic does the work. The engine doesn't feel it.",
                     meta: "Vibe Environment / 3 weeks / Optimized",
                     imageUrls: [
-                        "/assets/projects/vibe_ship/one.png",
-                        "/assets/projects/vibe_ship/two.png",
+                        "/rafastudioweb/assets/projects/vibe_ship/one.png",
+                        "/rafastudioweb/assets/projects/vibe_ship/two.png",
                     ],
                     importance: "secondary",
                     stats: {
@@ -36,8 +36,8 @@ export const siteConfig: SiteConfig = {
                         "Five levels of Springfield chaos, each one faster than the last. Every asset and mechanic was built once and reused, so when the scope grew, nothing broke and nothing got rebuilt from scratch.",
                     meta: "Arcade Game / 2 weeks / Modular Design",
                     imageUrls: [
-                        "/assets/projects/simpsons_speedrun/one.png",
-                        "/assets/projects/simpsons_speedrun/two.png",
+                        "/rafastudioweb/assets/projects/simpsons_speedrun/one.png",
+                        "/rafastudioweb/assets/projects/simpsons_speedrun/two.png",
                     ],
                     importance: "secondary",
                     stats: {
