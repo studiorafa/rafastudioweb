@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Reset overrides */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+.dark body {
+    background-color: #000000;
+    color: #ffffff;
+}
+/* Smooth scrolling logic */
+html {
+    scroll-behavior: smooth;
+}
+
+/* CUSTOM SCROLLBAR - The "Rail" */
+::-webkit-scrollbar {
+    width: 8px; /* Slightly wider than 6px for better usability */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Thumb - Light Mode */
+::-webkit-scrollbar-thumb {
+    background: #e5e5e5;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #d4d4d4;
+}
+
+/* Thumb - Dark Mode */
+.dark ::-webkit-scrollbar-thumb {
+    background: #333333;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+    background: #4d4d4d;
+}
+
+/* MINIMALIST SELECTION */
+::selection {
+    background-color: #000000;
+    color: #ffffff;
+}
+.dark ::selection {
+    background-color: #ffffff;
+    color: #000000;
+}
